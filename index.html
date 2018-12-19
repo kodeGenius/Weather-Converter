@@ -7,6 +7,7 @@
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  
 	  <style>
 		  body {
 		      position: relative; 
@@ -17,21 +18,20 @@
   background-position-x: 100%; background-image: url("BG.jpg");}
 		  #section3 {padding-top:50px;height:500px;width:100%;background-size: cover;background-position-y: 100%;
   background-position-x: 100%; background-image: url("WD.jpg");}
-		  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
-		  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
 		  .buttton-color{color:red;}
+		  h1{font-weight: bold; }
 	  </style>
-	</head>S
+	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
-		        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 		          <span class="icon-bar"></span>
 		          <span class="icon-bar"></span>
 		          <span class="icon-bar"></span>                        
-		      </button>
+		       </button>  
 		      <a class="navbar-brand" href="#">Weather-Converter</a>
 		    </div>
 		    <div>
@@ -40,12 +40,6 @@
 		          <li><a href="#section1">Celcius</a></li>
 		          <li><a href="#section2">Fahrenheit</a></li>
 		          <li><a href="#section3">Newton</a></li>
-		          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
-		            <ul class="dropdown-menu">
-		              <li><a href="#section41">Section 4-1</a></li>
-		              <li><a href="#section42">Section 4-2</a></li>
-		            </ul>
-		          </li>
 		        </ul>
 		      </div>
 		    </div>
@@ -55,9 +49,10 @@
 		<div id="section1"  class="container-fluid">
 		  <h1>Celcius</h1>
 		  <form id="celcius">
-			  <input type="text" placeholder="Enter value for kelvin" id="check" onchange="cels();" /> 
-			  <button class="buttton-color" id="cels">check celcius</button>
+			  <input type="text" placeholder="Enter value for kelvin" id="check" /> 
+			  <input type="button" name="check celcius" value="check celcius" onclick="celcius();">
 		  </form>
+		  <fieldset id="lo"></fieldset>
 		</div>
 		<div id="section2" class="container-fluid">
 		  <h1>Fahrenheit</h1>
@@ -69,28 +64,15 @@
 		  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 		  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 		</div>
-		<div id="section41" class="container-fluid">
-		  <h1>Section 4 Submenu 1</h1>
-		  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-		  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-		</div>
-		<div id="section42" class="container-fluid">
-		  <h1>Section 4 Submenu 2</h1>
-		  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-		  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-		</div>
 		<script type="text/javascript">
-			// declare kelvin
-			//let kelvin = 250;
-			function cels() {
-				/*kelvin= e.target.value("check");
-				const celsius = kelvin - 273;
-				return celsius;*/
-				alert('celsius');
-			}
-				
-			// this calc celsius which is 273 less than kelvin value
 			
-		</script>>
+			const celcius = ()=>{
+				 let val = document.getElementById("check").value;
+				const cal = val - 273;
+				return cal;
+				
+			}
+			document.getElementById("lo").innerHTML = celcius();
+		</script>
 	</body>
 </html>
