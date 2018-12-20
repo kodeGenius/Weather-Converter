@@ -1,0 +1,14 @@
+body {
+		      position: relative; 
+		  }
+		  #section1 {padding-top: 50px;height:500px;width:100%;background-size: cover;background-position-y: 100%;
+  background-position-x: 100%; background-image: url("background.jpg");}
+		  #section2 {padding-top:50px;height:500px;width:100%;background-size: cover;background-position-y: 100%;
+  background-position-x: 100%; background-image: url("BG.jpg");}
+		  #section3 {padding-top:50px;height:500px;width:100%;background-size: cover;background-position-y: 100%;
+  background-position-x: 100%; background-image: url("WD.jpg");}
+		  .buttton-color{color:red;}
+		  h1{font-weight: bold; }
+		  .display{ color: red;font-weight: bolder;font-size: 30px; }
+		  .display1{ color: black;font-weight: bolder; font-size: 30px; }
+		  .display2{ color: green;font-weight: bolder; font-size: 30px; }
