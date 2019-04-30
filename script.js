@@ -3,6 +3,7 @@ const celcius = ()=>{
 	let cal = val - 273;
 	document.getElementById("lo").innerHTML = `${val} kelvin will have the temperature of ${cal} degrees celsius.`;
 	}
+// to calculate fahr
 const fahrenheit = ()=>{
 	let val = document.getElementById("check1").value;
 	let cal = Math.floor(val * (9/5) + 32);
