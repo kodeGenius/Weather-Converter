@@ -1,7 +1,7 @@
 // script file system
 <script type="text/javascript">
-			// declare kelvin and celsius
-			//let kelvin = 250;
+	declare kelvin and celsius
+	let kelvin = 250;
 	function cels() {
 				/*kelvin= e.target.value("check");
 				const celsius = kelvin - 273;
