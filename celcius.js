@@ -1,4 +1,4 @@
-// script file system
+
 <script type="text/javascript">
 	declare kelvin and celsius
 	let kelvin = 250;
